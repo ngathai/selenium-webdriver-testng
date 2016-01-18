@@ -30,7 +30,7 @@ public class DownloadFile {
 		fprofile.setPreference( "pdfjs.disabled", true ); 
 		driver = new FirefoxDriver(fprofile); } 
 	@Test public void OpenURL() throws InterruptedException{ 
-		driver.get("http://only-testing-blog.blogspot.in/2014/05/login.html"); //Download Text File 
+		driver.get("http://only-testing-blog.blogspot.in/2014/05/login.html");
 		driver.findElement(By.xpath("//a[contains(.,'Download Text File')]")).click(); 
 		Thread.sleep(5000);
 		driver.findElement(By.xpath("//a[contains(.,'Download PDF File')]")).click(); 
