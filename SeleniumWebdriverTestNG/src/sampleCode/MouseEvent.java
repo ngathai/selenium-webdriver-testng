@@ -36,11 +36,4 @@ public class MouseEvent {
 		
 		mouseOverName.perform();
 	}
-
-	@Test
-	public void testUploadFile(){
-		WebElement uploadElement = driver.findElement(By.id("upload"));
-		uploadElement.sendKeys("C:\\test.txt"); //This is url of file want to upload. NOTE: must be "\\" in url
-		driver.findElement(By.name("upload")).click(); //This is button to upload image
-	}
 }
