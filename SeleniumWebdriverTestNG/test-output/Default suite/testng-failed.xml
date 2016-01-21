@@ -3,13 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="sampleCode.NewTest">
+      <class name="sampleCode.TakeScreenShotFailTestCase">
         <methods>
+          <include name="takeScreenshot"/>
           <include name="beforeTest"/>
           <include name="afterTest"/>
-          <include name="attachFile"/>
+          <include name="TearDown"/>
         </methods>
-      </class> <!-- sampleCode.NewTest -->
+      </class> <!-- sampleCode.TakeScreenShotFailTestCase -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
