@@ -2,6 +2,7 @@ package sampleCode;
 
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Parameters;
 
 import org.openqa.selenium.By;
@@ -50,9 +51,10 @@ public class CrossBrowser {
 		String actual = myacc.getText();
 		Assert.assertEquals(actual, expected);
 	}
-	
-	@org.testng.annotations.DataProvider(name = "LoginProvider")
-	public Object[][] getDataFromDataprovider() {
-		return new Object[][] { { "thaithianhnga@gmail.com", "123456789" } };
-	}
+	 @DataProvider(name = "LoginProvider")
+	  public Object[][] getDataFromDataProvider() {
+	    return new Object[][] {
+	      new Object[] { "thaithianhnga@gmail.com", "123456789" }
+	    };
+	  }
 }
