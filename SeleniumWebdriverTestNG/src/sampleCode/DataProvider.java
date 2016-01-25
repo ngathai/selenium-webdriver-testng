@@ -69,9 +69,7 @@ public class DataProvider {
 	}
 
 	@org.testng.annotations.DataProvider(name = "LoginProvider")
-
 	public Object[][] getDataFromDataprovider(Method m) {
-
 		if (m.getName().equalsIgnoreCase("testDataProviderLoginValid")) {
 			return new Object[][] { { "thaithianhnga@gmail.com", "123456789" } };
 		} else {
