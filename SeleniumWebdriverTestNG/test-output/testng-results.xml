@@ -2,36 +2,24 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite1" duration-ms="23591" started-at="2016-01-20T10:31:42Z" finished-at="2016-01-20T10:32:05Z">
+  <suite name="Default suite" duration-ms="7965" started-at="2016-01-25T02:06:33Z" finished-at="2016-01-25T02:06:41Z">
     <groups>
     </groups>
-    <test name="LearnSeleniumWebdriverTestNG" duration-ms="23591" started-at="2016-01-20T10:31:42Z" finished-at="2016-01-20T10:32:05Z">
-      <class name="sampleCode.TestNGParameter">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:sampleCode.TestNGParameter@55071871]" name="beforeTest" is-config="true" duration-ms="83" started-at="2016-01-20T17:31:42Z" finished-at="2016-01-20T17:31:42Z">
+    <test name="Default test" duration-ms="7965" started-at="2016-01-25T02:06:33Z" finished-at="2016-01-25T02:06:41Z">
+      <class name="sampleCode.LoggingDemo">
+        <test-method status="PASS" signature="before()[pri:0, instance:sampleCode.LoggingDemo@50a85f01]" name="before" is-config="true" duration-ms="5095" started-at="2016-01-25T09:06:33Z" finished-at="2016-01-25T09:06:38Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="testNGParameter(java.lang.String, java.lang.String)[pri:0, instance:sampleCode.TestNGParameter@55071871]" name="testNGParameter" duration-ms="23479" started-at="2016-01-20T17:31:42Z" finished-at="2016-01-20T17:32:05Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[thaithianhnga@gmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[123456789]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="testLog()[pri:0, instance:sampleCode.LoggingDemo@50a85f01]" name="testLog" duration-ms="2838" started-at="2016-01-25T09:06:38Z" finished-at="2016-01-25T09:06:41Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testNGParameter -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:sampleCode.TestNGParameter@55071871]" name="afterTest" is-config="true" duration-ms="10" started-at="2016-01-20T17:32:05Z" finished-at="2016-01-20T17:32:05Z">
+        </test-method> <!-- testLog -->
+        <test-method status="PASS" signature="after()[pri:0, instance:sampleCode.LoggingDemo@50a85f01]" name="after" is-config="true" duration-ms="14" started-at="2016-01-25T09:06:41Z" finished-at="2016-01-25T09:06:41Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterTest -->
-      </class> <!-- sampleCode.TestNGParameter -->
-    </test> <!-- LearnSeleniumWebdriverTestNG -->
-  </suite> <!-- Suite1 -->
+        </test-method> <!-- after -->
+      </class> <!-- sampleCode.LoggingDemo -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
