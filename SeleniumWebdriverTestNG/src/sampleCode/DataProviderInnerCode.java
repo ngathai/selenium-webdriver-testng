@@ -12,7 +12,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 
-public class DataProvider {
+public class DataProviderInnerCode {
 	WebDriver driver = new FirefoxDriver();
 	String url = "http://uat2.theluxurycloset.com/lykan/web/";
 
@@ -73,7 +73,7 @@ public class DataProvider {
 		if (m.getName().equalsIgnoreCase("testDataProviderLoginValid")) {
 			return new Object[][] { { "thaithianhnga@gmail.com", "123456789" } };
 		} else {
-			return new Object[][] { { "", "123456" }, {"", "654321"} };
+			return new Object[][] { { "", "123456" }, {"thaithi@gmail.com", ""} };
 		}
 	}
 }
