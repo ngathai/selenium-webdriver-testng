@@ -3,13 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="sampleCode.LoggingDemo">
+      <class name="Excel.DataProviderWithExcel_001">
         <methods>
-          <include name="after"/>
-          <include name="testLog"/>
-          <include name="before"/>
+          <include name="beforeMethod"/>
+          <include name="f"/>
         </methods>
-      </class> <!-- sampleCode.LoggingDemo -->
+      </class> <!-- Excel.DataProviderWithExcel_001 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
