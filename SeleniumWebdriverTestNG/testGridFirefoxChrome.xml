@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Grid" thread-count="2" parallel="tests">
+	<test name="FireFoxTest">
+		<parameter name="browser" value="firefox" />
+			<classes>
+				<class name="sampleCode.GridBrowsers">
+				</class>
+			</classes>
+	</test>
+	<test name="ChromeTest">
+		<parameter name="browser" value="chrome" />
+			<classes>
+				<class name="sampleCode.GridBrowsers">
+				</class>
+			</classes>
+	</test>
+</suite>
