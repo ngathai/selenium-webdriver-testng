@@ -1,0 +1,99 @@
+PAIRWISE TESTING TESTING
+
+1. What is Pairwise testing?
+
+Let's say we have a form with 4 variables (include values) need to check:
+- Platform:	Windows XP, Windows Vista, Windows 7, Mac (4 values)
+- Word length:	32-bit, 64-bit (2 values)
+- Hardware: DVD, DVD-RW, Blu-ray (3 values)
+- External display: None, VGA, HDMI (3 values)
+If we want to combine all cases, it has: 4*2*3*3 = 72 different combinations of the testing parameter.
+=> Pairwise testing will help reduce the number of combinations.
+
+2. Pairwise testing method:
+
+Step 1: Create a table, and arrange variable column from which one has the large number of values to the least one.
+
+Platform | Hardware | External | Word length
+
+Step 2: Input values into the first column, and repeat it "n" times. (With "n" is the number of values of the second column)
+
+Platform 		| Hardware 		| External display| Word length
+Windows XP		|				|				  |				
+Windows XP		|				|				  |				
+Windows XP		|				|				  |				
+
+Windows Vista	|				|				  |			
+Windows Vista	|				|				  |
+Windows Vista	|				|				  |
+
+Windows 7	 	|				|				  |
+Windows 7	 	|				|				  |
+Windows 7	 	|				|				  |
+
+Mac			 	|				|				  |
+Mac			 	|				|				  |
+Mac			 	|				|				  |
+
+Steps 3: Input value for the second column
+
+Platform 		| Hardware 		| External display| Word length
+Windows XP		| DVD			|				  |				
+Windows XP		| DVD-RW		|				  |				
+Windows XP		| Blu-ray		|				  |				
+
+Windows Vista	| DVD			|				  |			
+Windows Vista	| DVD-RW		|				  |
+Windows Vista	| Blu-ray		|				  |
+
+Windows 7	 	| DVD			|				  |
+Windows 7	 	| DVD-RW		|				  |
+Windows 7	 	| Blu-ray		|				  |
+
+Mac			 	| DVD			|				  |
+Mac			 	| DVD-RW		|				  |
+Mac			 	| Blu-ray		|				  |
+
+Step 4: Input value for the third column, and combine between Second and Third
+
+Platform 		| Hardware 		| External display| Word length
+Windows XP		| DVD			|	NONE		  |				
+Windows XP		| DVD-RW		|	VGA			  |				
+Windows XP		| Blu-ray		|	HDMI		  |				
+
+Windows Vista	| DVD			|	VAG			  |			
+Windows Vista	| DVD-RW		|	NONE		  |
+Windows Vista	| Blu-ray		|	HDMI		  |
+
+Windows 7	 	| DVD			|	HDMI		  |
+Windows 7	 	| DVD-RW		|	NONE		  |
+Windows 7	 	| Blu-ray		|	VGA			  |
+
+Mac			 	| DVD			|	NONE		  |
+Mac			 	| DVD-RW		|	HDMI		  |
+Mac			 	| Blu-ray		|	VGA			  |
+
+Step 5: Input value for the last column, and combine between the Third and Last
+
+Platform 		| Hardware 		| External display| Word length
+Windows XP		| DVD			|	NONE		  |	32-bit			
+Windows XP		| DVD-RW		|	VGA			  |	64-bit			
+Windows XP		| Blu-ray		|	HDMI		  |	32-bit			
+
+Windows Vista	| DVD			|	VAG			  |	64-bit		
+Windows Vista	| DVD-RW		|	NONE		  | 32-bit
+Windows Vista	| Blu-ray		|	HDMI		  | 64-bit
+
+Windows 7	 	| DVD			|	HDMI		  | 32-bit
+Windows 7	 	| DVD-RW		|	NONE		  | 64-bit
+Windows 7	 	| Blu-ray		|	VGA			  | 32-bit
+
+Mac			 	| DVD			|	NONE		  | 64-bit
+Mac			 	| DVD-RW		|	VGA		      | 32-bit
+Mac			 	| Blu-ray		|	HDMI		  | 64-bit
+
+Now we just need to check 12 combinations cases.
+
+
+
+
