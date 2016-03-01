@@ -60,4 +60,10 @@ public class HandleTable {
 		}
 		Assert.assertEquals(existed, true);
 	}
+	//Get value in one column with dynamic Xpath
+	/*
+	 * for(int i=1; i<=3; i++){
+			driver.findElement(By.xpath("//*[@id='professionalSeller']/div/table/tbody/tr["+i+"]/td[4]/a")).click();
+			}
+	 */
 }
