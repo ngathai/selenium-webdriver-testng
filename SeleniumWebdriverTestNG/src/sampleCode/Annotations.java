@@ -21,9 +21,10 @@ public class Annotations {
 	 * priority=1: this test case will run first
 	 * dataProvider="dp": get value from data provider has name "dp"
 	 * timeOut=5000: if test case doesn't work within that time, force stop and failed.
+	 * invocationCount=10: repeat the test case 10 times.
 	 */
 	
-	@Test(priority=1, dataProvider = "dp", timeOut=5000)
+	@Test(priority=1, dataProvider = "dp", timeOut=5000, invocationCount=10)
 	public void loginDataProvider(String n, String s) {
 		//
 	}
