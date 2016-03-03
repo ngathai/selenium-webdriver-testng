@@ -27,23 +27,25 @@ public class ScrollPage {
 
 	@Test
 	public void scrollPage() throws InterruptedException {
-		JavascriptExecutor jse = (JavascriptExecutor)driver;
-		//Scroll down
+		JavascriptExecutor jse = (JavascriptExecutor) driver;
+		// Scroll down
 		jse.executeScript("window.scrollBy(0,1000)", "");
 		Thread.sleep(6000);
-		//Scroll up
+		// Scroll up
 		jse.executeScript("window.scrollBy(0,-1000)", "");
 		Thread.sleep(6000);
-		//Scroll down to bottom
+		// Scroll down to bottom
 		Actions actions = new Actions(driver);
 		actions.sendKeys(Keys.END).perform();
 		Thread.sleep(6000);
-		//Scroll up to top
+		// Scroll up to top
 		actions.sendKeys(Keys.HOME).perform();
 		Thread.sleep(6000);
-		//Scroll to specific element
+		// Scroll to specific element
 		WebElement element = driver.findElement(By.className("home-categories"));
 		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element);
-
+		// Scroll horizontally page
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("scroll(200, 0)");
 	}
 }
