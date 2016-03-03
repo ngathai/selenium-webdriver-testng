@@ -22,6 +22,7 @@ public class MouseEvent {
 	@Test
 	public void testMouseEvent() {
 		WebElement text = driver.findElement(By.id("id-text"));
+		text.click();
 		Actions builder = new Actions(driver);
 		WebElement hoverName = driver.findElement(By.id("id-hover"));
 		//Multiple Actions
