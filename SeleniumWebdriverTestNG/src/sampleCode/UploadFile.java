@@ -10,6 +10,7 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 
 //This function might not work on Ubuntu
+//Only work for Form has input type = file
 public class UploadFile {
 	WebDriver driver = new FirefoxDriver();
 	String url = "http://uat2.theluxurycloset.com/lykan/web/";
