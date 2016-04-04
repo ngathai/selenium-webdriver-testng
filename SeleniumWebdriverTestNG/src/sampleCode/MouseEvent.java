@@ -2,11 +2,9 @@ package sampleCode;
 
 import org.testng.annotations.Test;
 import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.interactions.Action;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.BeforeTest;
 
@@ -21,20 +19,24 @@ public class MouseEvent {
 
 	@Test
 	public void testMouseEvent() {
-		WebElement text = driver.findElement(By.id("id-text"));
-		text.click();
+		/*
+		 * The process is move mouse to hoverText then select clickText and click on it
+		 */
+		WebElement hoverText = driver.findElement(By.id("hover-text"));
+		WebElement clickText = driver.findElement(By.id("click-text"));
 		Actions builder = new Actions(driver);
-		WebElement hoverName = driver.findElement(By.id("id-hover"));
-		//Multiple Actions
-		Action mouseOverName = builder.moveToElement(hoverName) //Mouse hover
-									  .click()
-									  .keyDown(text, Keys.SHIFT)
-									  .sendKeys(text, "nadie")
-									  .keyUp(text, Keys.SHIFT)
-									  .doubleClick()
-									  .contextClick()
-									  .build();
-		
-		mouseOverName.perform();
+		builder.moveToElement(hoverText).build().perform();
+		clickText.click();
+
+//		Action mouseOverName = builder.moveToElement(hoverName) //Mouse hover
+//									  .click()
+//									  .keyDown(text, Keys.SHIFT)
+//									  .sendKeys(text, "nadie")
+//									  .keyUp(text, Keys.SHIFT)
+//									  .doubleClick()
+//									  .contextClick()
+//									  .build();
+//		
+//		mouseOverName.perform();
 	}
 }
