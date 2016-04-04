@@ -23,8 +23,6 @@ public class DataProviderExcelSheet2 {
 	Workbook wb;
 	Sheet sh1;
 	int numrow;
-	String username;
-	String password;
 
 	@BeforeTest
 	public void Setup()
