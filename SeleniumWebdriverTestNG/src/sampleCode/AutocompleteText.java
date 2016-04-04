@@ -34,13 +34,14 @@ public class AutocompleteText {
 	}
 
 	@Test
-	public void autoComplete() {
+	public void autoComplete() throws InterruptedException {
 		driver.navigate().to(URL);
 		WebElement frameElement = driver.findElement(frameLocator);
 		driver.switchTo().frame(frameElement);
 		wait.until(ExpectedConditions.presenceOfElementLocated(tagText));
 		WebElement textBoxElement = driver.findElement(tagText);
 		textBoxElement.sendKeys("a");
+		Thread.sleep(5000);
 		// First case can use arrow to select text
 		textBoxElement.sendKeys(Keys.ARROW_DOWN);
 		textBoxElement.sendKeys(Keys.ENTER);
