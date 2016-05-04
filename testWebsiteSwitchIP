@@ -16,10 +16,15 @@ Step 3.2> Config Proxy for ANDROID:
 - 3.2.2: Connect Wifi (e.g: EnclaveODC)
 - 3.2.3: Long tap on "EnclaveODC" > Modify network config > Show advanced option > Edit proxy > Manual
 - 3.2.4: Enter IP and Port same as Desktop > Save
-
-Step 4> Refresh site https://www.whatismyip.com to verify that the current IP now is "84.23.107.195" => Success.
+Step 4> Disable browser's cache
+- 4.1: CHROME > F12 > Network tab > check on Disable cache
+- 4.2: FIREFOX > F12 > Net tab > Dropdown > Disable Browser cache
+Step 5> Refresh site https://www.whatismyip.com to verify that the current IP now is "84.23.107.195" => Success.
+Step 6> Open Incognito/Private browser for testing.
+For testing many different IPs, should change IP proxy > close browser then open again to apply new IP.
 
 EXAMPLE: Need to check the website will auto switch to Arabix mode if users access site from Saudi Arabia
-- If current IP is Vietnam > Open http://qa.theluxurycloset/lykan/web/ => Shows English mode
-- If set IP is Saudi > Open http://qa.theluxurycloset/lykan/web/ => Show Arabic mode
+1> Current IP is Vietnam > Open http://qa.theluxurycloset/lykan/web/ => Shows English mode
+2> Change Saudi Arabia IP > Close browser > Open Incognito again
+3> Open http://qa.theluxurycloset/lykan/web/ => Show Arabic mode
 ==> Success!!!
