@@ -1,0 +1,19 @@
+Step 1> Open site: https://www.whatismyip.com
+To view current IP address.
+e.g: Vietnma "113.160.225.76"
+Step 2> Open site: http://nntime.com/proxy-country/
+To find which IP address we need to test.
+Step 3> Config Proxy:
+- 3.1: Open Firefox/Chrome > Option (Preference) > Advance > Network > Setting
+- 3.2: Select "Manual proxy configuration"
+- 3.3: Enter IP address needed to test.
+e.g: Saudi Arabia "84.23.107.195"
+- 3.4: Enter its port "8080"
+- 3.5: Select "Use this proxy for all servers"
+- 3.6: click OK.
+Step 4> Refresh site https://www.whatismyip.com to verify that the current IP now is "84.23.107.195" => Success.
+
+EXAMPLE: Need to check the website will auto switch to Arabix mode if users access site from Saudi Arabia
+- If current IP is Vietnam > Open http://qa.theluxurycloset/lykan/web/ => Shows English mode
+- If set IP is Saudi > Open http://qa.theluxurycloset/lykan/web/ => Show Arabic mode
+==> Success!!!
