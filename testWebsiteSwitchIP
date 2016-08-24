@@ -1,6 +1,6 @@
 Step 1> Open site: https://www.whatismyip.com
 To view current IP address.
-e.g: Vietnma "113.160.225.76"
+e.g: Vietnam "113.160.225.76"
 Step 2> Open site: http://nntime.com/proxy-country/
 To find which IP address we need to test.
 Step 3.1> Config Proxy for DESKTOP browser:
@@ -23,7 +23,7 @@ Step 5> Refresh site https://www.whatismyip.com to verify that the current IP no
 Step 6> Open Incognito/Private browser for testing.
 For testing many different IPs, should change IP proxy > close browser then open again to apply new IP.
 
-EXAMPLE: Need to check the website will auto switch to Arabix mode if users access site from Saudi Arabia
+EXAMPLE: Need to check the website will auto switch to Arabic mode if users access site from Saudi Arabia
 1> Current IP is Vietnam > Open http://qa.theluxurycloset/lykan/web/ => Shows English mode
 2> Change Saudi Arabia IP > Close browser > Open Incognito again
 3> Open http://qa.theluxurycloset/lykan/web/ => Show Arabic mode
