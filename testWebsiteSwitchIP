@@ -1,13 +1,13 @@
 Step 1> Open site: https://www.whatismyip.com
 To view current IP address.
 e.g: Vietnam "113.160.225.76"
-Step 2> Open site: http://nntime.com/proxy-country/
+Step 2> Open site: http://www.samair.ru/proxy/type-24.htm
 To find which IP address we need to test.
 Step 3.1> Config Proxy for DESKTOP browser:
 - 3.1.1: Open Firefox/Chrome > Option (Preference) > Advance > Network > Setting
 - 3.1.2: Select "Manual proxy configuration"
 - 3.1.3: Enter IP address needed to test.
-e.g: Saudi Arabia "84.23.107.195"
+e.g: Saudi Arabia "95.218.52.21"
 - 3.1.4: Enter its port "8080"
 - 3.1.5: Select "Use this proxy for all servers"
 - 3.1.6: click OK.
@@ -19,7 +19,7 @@ Step 3.2> Config Proxy for ANDROID:
 Step 4> Disable browser's cache
 - 4.1: CHROME > F12 > Network tab > check on Disable cache
 - 4.2: FIREFOX > F12 > Net tab > Dropdown > Disable Browser cache
-Step 5> Refresh site https://www.whatismyip.com to verify that the current IP now is "84.23.107.195" => Success.
+Step 5> Refresh site https://www.whatismyip.com to verify that the current IP now is "95.218.52.21" => Success.
 Step 6> Open Incognito/Private browser for testing.
 For testing many different IPs, should change IP proxy > close browser then open again to apply new IP.
 
